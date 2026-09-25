@@ -1,0 +1,563 @@
+/* ======================
+   GENERAL / PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-top: 0;
+    color: #666;
+}
+
+
+/* ======================
+   DASHBOARD
+========================= */
+
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 180px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* ======================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-header h2 {
+    margin: 0;
+}
+
+
+/* ======================
+   ADD PROJECT BUTTON
+========================= */
+
+.projects-header button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #505;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.projects-header button:hover {
+    background-color: #727;
+}
+
+
+/* ======================
+   EMPTY STATE
+========================= */
+.empty-state {
+    margin-top: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    color: #666;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.empty-state p {
+    margin: 0;
+}
+
+/* ======================
+   PROJECT FORM
+========================= */
+
+.project-form {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.project-form.hidden {
+    display: none;
+}
+
+.project-form input {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.project-form input:focus {
+    outline: none;
+    border-color: #505;
+}
+
+.project-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #505;
+    font-size: 14px;
+}
+
+.project-form button:hover {
+    background-color: #727;
+}
+
+.form-error {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #d33;
+}
+
+.project-form .input-error {
+    border: 2px solid #d33;
+}
+
+.project-form.editing {
+    border: 2px solid #6c63ff;
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.15);
+}
+
+/* ======================
+   PROJECT CARDS
+========================= */
+
+.project-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.project-card>p {
+    margin: 8px 0;
+    color: #555;
+}
+
+
+/* ======================
+   PROJECT STATUS
+========================= */
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #e6f4ea;
+    color: #237333;
+}
+
+.status.completed {
+    background-color: #dbeafe;
+    color: #5b7bc1;
+}
+
+/* ======================
+   PROGRESS BAR
+========================= */
+
+.progress-section {
+    margin-top: 20px;
+}
+
+.progress-section>p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #550055;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.progress-container span {
+    font-size: 14px;
+    min-width: 40px;
+}
+
+
+/* ======================
+   PROJECT FOOTER
+========================= */
+
+.project-footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-project-btn,
+.delete-project-btn {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.edit-project-btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+}
+
+.edit-project-btn:hover {
+    background: #e2e2e2;
+}
+
+
+.project-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* ======================
+   DELETE PROJECT BUTTON
+========================= */
+
+.delete-project-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-project-btn:hover {
+    background-color: #ffcccc;
+    color: #b00;
+}
+
+
+/* ======================
+   ADD TASK BUTTON
+========================= */
+
+.add-task-btn {
+    margin-top: 15px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #ddd;
+}
+
+/* ======================
+   EDIT TASK BUTTON
+========================= */
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 4px;
+}
+
+.edit-task-btn,
+.delete-task-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.edit-task-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.edit-task-btn:hover {
+    background-color: #e2e2e2;
+}
+
+.delete-task-btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.delete-task-btn:hover {
+    background-color: #ffcccc;
+    color: #b00;
+}
+
+.task-edit-input {
+    flex: 1;
+    padding: 8px 10px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.task-edit-input:focus {
+    outline: none;
+    border-color: #505;
+}
+
+.save-task-btn,
+.cancel-task-btn {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.save-task-btn {
+    background-color: #505;
+    color: white;
+}
+
+.save-task-btn:hover {
+    background-color: #727;
+}
+
+.cancel-task-btn {
+    background-color: #eee;
+    color: #333;
+}
+
+.cancel-task-btn:hover {
+    background-color: #ddd;
+}
+
+/* ======================
+   TASK FORM
+========================= */
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.task-form.hidden {
+    display: none;
+}
+
+.task-name-input {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.task-name-input:focus {
+    outline: none;
+    border-color: #505;
+}
+
+.create-task-btn {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #505;
+    color: white;
+    cursor: pointer;
+}
+
+.create-task-btn:hover {
+    background-color: #727;
+}
+
+
+/* ======================
+   TASK LIST
+========================= */
+
+.task-list {
+    margin-top: 15px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.task>span,
+.task>.task-edit-input {
+    flex: 1;
+}
+
+.task span {
+    font-size: 14px;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+/* ======================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .projects-section {
+        padding: 16px;
+    }
+
+    .projects-header {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        min-width: 140px;
+    }
+
+    .task-form {
+        flex-direction: column;
+    }
+
+    .create-task-btn {
+        width: 100%;
+    }
+}

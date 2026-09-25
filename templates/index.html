@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Project Manager</h1>
+        <p>Manage your projects and tasks.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Dashboard</h2>
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>Projects</h3>
+                    <p id="project-count">0</p>
+                </div>
+                <div class=" stat-card">
+                    <h3>Total Tasks</h3>
+                    <p id="task-count">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed Tasks</h3>
+                    <p id="completed-count">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Overdue</h3>
+                    <p id="overdue-count">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="projects-header">
+                <h2>My Projects</h2>
+                <button id="add-project-btn">Add Projects</button>
+            </div>
+            <form class="project-form hidden">
+                <h2 class="project-form-title">Create New Project</h2>
+                <input type="text" id="project-name" placeholder="Project name">
+                <p class="form-error"></p>
+                <input type="text" id="project-description" placeholder="Description">
+                <input type="date" id="project-deadline">
+                <button type="submit" id="create-project-btn">Create Project</button>
+            </form>
+            <div class="project-list">
+            </div>
+        </section>
+
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
