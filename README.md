@@ -10,19 +10,23 @@ The application allows users to create projects, manage tasks, track progress, a
 
 ### Dashboard
 
-![Dashboard](Dashboard.png)
+<img width="1884" height="893" alt="dashboard" src="https://github.com/user-attachments/assets/3a8903ec-1c6f-4b01-8be6-8dbd8d29d46b" />
+
 
 ### Projects and Tasks
 
-![Projects and Tasks](<Progress bar.png>)
+<img width="1663" height="1079" alt="progress-bar" src="https://github.com/user-attachments/assets/cd343f3e-3f9f-4b02-a2ff-c6d053758bd8" />
+
 
 ### Create / Edit Project
 
-![Create / Edit Project](<Edit Project.png>)
+<img width="1504" height="568" alt="edit-project" src="https://github.com/user-attachments/assets/011390e0-817e-480a-bbd6-c2b9eae8b793" />
+
 
 ### Create / Edit Task
 
- ![Create / Edit Task](<Editing Task Name.png>)
+ <img width="1483" height="691" alt="editing-task-name" src="https://github.com/user-attachments/assets/11690199-81b0-4076-9ce7-fbf43c651db1" />
+
 
 ## Features
 
