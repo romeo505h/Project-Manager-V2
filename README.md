@@ -28,7 +28,7 @@ The application allows users to create projects, manage tasks, track progress, a
  <img width="1483" height="691" alt="editing-task-name" src="https://github.com/user-attachments/assets/11690199-81b0-4076-9ce7-fbf43c651db1" />
 
 
-### No Project Yet
+### No Projects Yet
 
 <img width="1907" height="758" alt="empty-state" src="https://github.com/user-attachments/assets/8ccc63e9-fefc-41f3-89ea-e0271ec7e6d7" />
 
